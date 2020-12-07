@@ -1,0 +1,312 @@
+i {
+    font-family: FontAwesome;
+    font-style: normal !important;
+}
+
+h1.ad-main-title{
+  text-align: center;
+}
+.ad-row {
+    overflow: auto;
+    padding: 25px 0 60px;
+    flex: 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ad-row.first.loading {
+    background-image: url(https://res.cloudinary.com/dkawq9bcx/image/upload/v1606305365/Ellipsis-1s-200px_1_rm5zyn.gif);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 50% 50%;
+}
+.ad-filter {
+    padding: 30px 40px 18px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.ad-filter > div {
+    margin: 0 20px;
+}
+.location-filter {
+    width: 20%;
+}
+#ad-location-select {
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #b1b1b1;
+}
+.price-slider {
+    display: flex;
+}
+/* RANGE SLIDER */
+input {
+  box-shadow: 0;
+  outline: 0;
+}
+.price-slider {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.price-slider input[type="number"] {
+    background-color: transparent;
+    border: 0;
+    padding-bottom: 25px;
+    font-size: 12px;
+    pointer-events: none;
+}
+input[type="number"].price-min {
+    text-align: left;
+    padding-left: 0;
+}
+input[type="number"].price-max {
+    text-align: right;
+    padding-right: 0;
+}
+.price-slider input[type=range] {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.price-slider input[type=number]::-webkit-outer-spin-button,
+.price-slider input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.price-slider input[type=number]:invalid,
+.price-slider input[type=number]:out-of-range {
+  border: 2px solid #e60023;
+}
+.price-slider input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+.price-slider input[type=range]:focus {
+  outline: none;
+}
+.price-slider input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #b1b1b1;
+}
+.price-slider input[type=range]:focus::-ms-fill-lower {
+  background: #b1b1b1;
+}
+.price-slider input[type=range]:focus::-ms-fill-upper {
+  background: #b1b1b1;
+}
+.price-slider input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #b1b1b1;
+  border-radius: 1px;
+  box-shadow: none;
+  border: 0;
+}
+.price-slider input[type=range]::-webkit-slider-thumb {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 0px 0px #000;
+  border: 1px solid #737373;
+  box-shadow: 0px 0px 1px 8px rgb(115 115 115 / 0.2);
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #b1b1b1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+.price-slider input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #b1b1b1;
+  border-radius: 1px;
+  box-shadow: none;
+  border: 0;
+}
+.price-slider input[type=range]::-moz-range-thumb {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 0px 0px #000;
+  border: 1px solid #737373;
+  box-shadow: 0px 0px 1px 8px rgb(115 115 115 / 0.2);
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #b1b1b1;
+  cursor: pointer;
+}
+.price-slider input[type=range]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.price-slider input[type=range]::-ms-fill-lower,
+.price-slider input[type=range]::-ms-fill-upper {
+  background: #b1b1b1;
+  border-radius: 1px;
+  box-shadow: none;
+  border: 0;
+}
+.price-slider input[type=range]::-ms-thumb {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 0px 0px #000;
+  border: 1px solid #737373;
+  box-shadow: 0px 0px 1px 8px rgb(115 115 115 / 0.2);
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #b1b1b1;
+  cursor: pointer;
+}
+/* RANGE SLIDER */
+.ad-filter-btn .btn {
+    background-color: #b1b1b1;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
+.ad-filter-btn .btn:hover {
+    background-color: #737373;
+    text-decoration: none;
+}
+.ads-col {
+    float: left;
+    width: 31.33%;
+    background-color: #fff;
+    margin-right: 2%;
+    margin-bottom: 40px;
+    overflow: auto;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.ads-body {
+    padding: 10px 25px 40px;
+}
+.ads-header {
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.ads-header p{
+  font-size: 14px;
+    color: #6d6d6d;
+}
+.ads-link {
+    text-decoration: none;
+    transition: .5s ease;
+}
+.ads-link:hover{
+	color:#32373c;
+}
+.ads-img{
+  position: relative;
+}
+.img-link{
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+}
+.ads-title{
+	font-size:30px !important;
+	line-height: 40px;
+  margin: 0; 
+}
+.post-go-to {
+  float: right;
+}
+.apply-filter.loading{
+    color:transparent;
+    background-image: url(https://res.cloudinary.com/dkawq9bcx/image/upload/v1606305365/Ellipsis-1s-200px_1_rm5zyn.gif);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: 50% 50%;
+}
+.no-ads-found {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* SINGLE AD */
+.single-ad-title{
+  text-align: center;
+}
+.categories {
+    display: flex;
+    align-items: center;
+}
+.category {
+    margin-right: 40px;
+}
+.city{
+  text-decoration: underline;
+}
+.single-nav {
+    padding: 0 0 100px;
+}
+.breadcrumbs {
+    padding: 55px 0;
+    font-size: 13px;
+}
+.breadcrumbs .current{
+  text-decoration: underline;
+}
+/* SINGLE AD */
+
+
+/* tablet and bellow */
+@media only screen and (max-width: 768px) {
+  .ad-filter {
+    padding: 30px 0 18px;
+  }
+  .price-slider {
+    width: 200px;
+  }
+  .ad-row {
+    display: block;
+  }
+  .ads-col {
+    float: none;
+    margin: 0 0 40px;
+    width: 100%;
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 767px) {
+  .ad-filter {
+    display: block;
+  }
+  .ad-filter > div {
+    margin: 0 0 40px;
+  }
+  .location-filter {
+    width: 100%;
+  }
+  .price-slider {
+    width: 100%;
+  }
+  .ads-header {
+    display: block;
+  }
+}
